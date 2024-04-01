@@ -10,7 +10,7 @@ thread_pool_max_size:
   checker: 5
 # Alist 服务器信息 type: list
 alist_servers:
-  - base_url: http://localhost:5244/
+  - base_url: http://localhost:80/
     username: "admin"
     password: "123456"
     verify_ssl: false
@@ -34,8 +34,8 @@ sync_groups:
     # 支持在不同的Alist服务器之间同步
     # 例子：http://localhost:5244/test1
     group:
-      - "http://localhost:5244/test1"
-      - "http://localhost:5244/test2"
+      - "http://localhost:80/test1"
+      - "http://localhost:80/test2"
 
 notify: # 通知服务，当触发一些异常后，将会发送通知。
   - enable: true
